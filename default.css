@@ -6,6 +6,10 @@
 
     --mainTextColor:black;
     --secondayTextColor:#4b5156;
+
+    --themeDotBorderColor: #24292e;
+
+    --previewBackgroundColor: rgb(251, 249, 243, 0.8);
 }
 
 html, body {
@@ -15,7 +19,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6, strong {
     color: var(--mainTextColor);
-    font-family: 'News Cycle', sans-serif;
+    font-family: 'Noto Serif TC', serif;    
 }
 
 span, li, p, label, input, textarea {
@@ -58,32 +62,173 @@ u1 {
 
 .greeting-wrapper {
     display: grid;
-    justify-content: center;
+
+    text-align: center;
     align-content: center;
-    border: 2px dotted lightcoral;
+
     min-height: 10em; 
 }
 
 .intro-wrapper {
     background-color: var(--secondaryColor);
-    border: 1px dashed var(--borderColor);
-    -webkit-box-shadow: 127px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 127px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 127px 10px 5px 0px rgba(0,0,0,0.75);
+    border: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 30em;
+    grid-template-areas: 
+        'nav-wrapper nav-wrapper'
+        'left-column right-column'
+    ;
+
+    -webkit-box-shadow: 4px -5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px -5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px -5px 5px 0px rgba(0,0,0,0.75);
 }
 
 .nav-wrapper {
-    border: 1px dotted lightcoral;
+    display: flex;
+    background-color: var(--mainColor);
+
+    border-bottom: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
+
+    grid-area: nav-wrapper;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-
-.left-wrapper {
-
+.dots-wrapper {
+    display: flex;
+    padding: 10px;
 }
 
-.rigth-wrapper {
+.browser-dot {
+    background-color: black;
 
+    height: 15px;
+    width: 15px;
+
+    border-radius: 50%;
+    margin: 5px;
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+    cursor: pointer;
+}
+
+#dot-x {
+    background-color: red;
+}
+
+#dot-x:hover {
+    border: 1px solid red;
+}
+
+#dot-- {
+    background-color: yellow;
+}
+
+#dot--:hover {
+    border: 1px solid yellow;
+}
+
+#dot-o {
+    background-color: green;
+}
+
+#dot-o:hover {
+    border: 1px solid green;
+}
+
+#navigation {
+   list-style-type: none;
+   padding: 10px;
+}
+
+#navigation a{
+    font-weight: bold;
+    color: rgb(15, 15, 179);
+ }
+
+ #navigation a:hover{
+    border: 2px solid black;
+ }
+ 
+.left-column {
+    grid-area: left-column;
+    padding-top: 50px;
+    padding-down: 50px;
+}
+
+#profile-pic {
+    display: block;
+    margin: auto;
+
+    height: 200px;
+    width: 200px;
+
+    border: 2px solid var(--borderColor);
+}
+
+#theme-options-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.theme-dot {
+    height: 30px;
+    width: 30px;
+
+    border-radius: 50%;
+    border: 2px solid var(--themeDotBorderColor);
+    margin: 10px;
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    
+    cursor: pointer;
+}
+
+.theme-dot:hover {
+    border-width: 5px;
+}
+
+#light-mode {
+    background-color: white;
+}
+
+#blue-mode {
+    background-color: rgb(97, 97, 168);
+}
+
+#pink-mode {
+    background-color: pink;
+}
+
+#purple-mode {
+    background-color: purple;
+}
+
+#settings-note {
+    font-size: 12px;
+    font-family: italic;
+    text-align: center;
+}
+
+.rigth-column {
+    grid-area: rigth-column;
+}
+
+#preview {
+    background-color: var(--previewBackgroundColor);
+    width: 300px;
+    border: 1.5px solid #17a2b8;
+    padding: 15px;
 }
 
 @media screen and (max-width: 1200px) {
