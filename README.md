@@ -1,5 +1,19 @@
 ## HTML tag cheatsheet
 
+- `<div>`: The `<div>` tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript. And any sort of content can be put inside the `<div>` tag! 
+
+        <section>
+            <div>
+                This is content inside <div> container.
+            </div>
+        </section>
+
+<br>
+
+- `<section>`: The `<section>` tag defines a 'actual' section in a document which unlike `<div>` just define wrapper.
+
+<br>
+
 - `<link>`: The `<link>` tag defines the relationship between the current document and an external resource. This tag is most often used to link to external style sheets.
 
     	<link rel="preconnect" href="https://fonts.gstatic.com">
