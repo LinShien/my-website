@@ -1,0 +1,16 @@
+:root {
+    --mainColor:rgb(255, 182, 193, 0.8);
+    --secondaryColor: pink;
+
+    --borderColor:black;
+
+    --mainTextColor:black;
+    --secondaryTextColor:#eeeeee;
+
+    --themeDotBorderColor: black;
+
+    --previewBackgroundColor: rgb(255, 192, 203, 0.8);
+    --previewShadowColor: rgb(255, 105, 180);
+
+    --submitBtnColor: rgb(199, 21, 133);
+}

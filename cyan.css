@@ -1,0 +1,16 @@
+:root {
+    --mainColor:rgb(127, 255, 212, 0.8);
+    --secondaryColor: rgb(224, 255, 255);
+
+    --borderColor: rgb(56, 5, 5);
+
+    --mainTextColor: darkslategray;
+    --secondaryTextColor: slategray;
+
+    --themeDotBorderColor: violet;
+
+    --previewBackgroundColor: rgb(224, 255, 255, 0.8);
+    --previewShadowColor: rgb(72, 209, 204);
+
+    --submitBtnColor: rgb(0, 128, 128);
+}

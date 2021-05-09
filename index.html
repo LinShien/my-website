@@ -7,9 +7,11 @@
         initial-scale=1, maximum-scale=1, minimum-scale=1" />
         
         <link rel="stylesheet" type="text/css" href="default.css">
+        <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&family=Roboto:wght@500&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d197301010.js" crossorigin="anonymous"></script>
     </head>
 
@@ -17,7 +19,7 @@
         <section class="s1">
             <div class="main-container">
                 <div class="greeting-wrapper">
-                    <h1>Hello World, I'm Shih-En</h1>
+                    <h1>^_^ Still Under Construction</h1>
                 </div>
 
                 <div class="intro-wrapper">
@@ -36,13 +38,13 @@
 
                     <div class="left-column">
                         <img id="profile-pic" src="images/profile_pic.jpg">
-                        <h5 style="text-align: center; line-height: 0;">Personlize Theme</h5>
+                        <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
                         
                         <div id="theme-options-wrapper">
-                            <div id="light-mode" class="theme-dot"></div>
-                            <div id="blue-mode" class="theme-dot"></div>
-                            <div id="pink-mode" class="theme-dot"></div>
-                            <div id="purple-mode" class="theme-dot"></div>
+                            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                            <div data-mode="pink" id="pink-mode" class="theme-dot"></div>
+                            <div data-mode="cyan" id="cyan-mode" class="theme-dot"></div>
                         </div>
 
                         <p id="settings-note">*Theme settings will be saved for<br>your next visit</p>
@@ -55,7 +57,7 @@
                                 <div id="top-right-corner" class="corner"></div>
                                 
                                 <h3>What I do</h3>
-                                <p>哩五炭及某?</p>
+                                <p>場外悲憤VT豚</p>
                                 
                                 <div id="bottom-left-corner" class="corner"></div>
                                 <div id="bottom-right-corner" class="corner"></div>
@@ -99,7 +101,7 @@
                     </div>
                         
                     <div id="social-links">
-                        <img src="images/image4.jpg">
+                        <img id="social-media-pic"src="images/image4.jpg">
                         
                         <h4>Check out my Github & Instagram</h4>
 
@@ -115,11 +117,54 @@
 
         <section class="s1">
             <div class="main-container">
+                <h3 style="text-align: center;">Posts</h3>
                 
+                <div class="post-wrapper">
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="images/image1.jpg">
+                            
+                            <div class="post-preview">
+                                <h6 class="post-title">Post 1</h6>
+                                <p class="post-intro">This is a post intro.</p>
+                                <p class="post-intro">This is a post intro.</p>
+                                <p class="post-intro">This is a post intro.</p>
+                                <a href="post.html">Read More</a>
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="images/image2.jpg">
+                            
+                            <div class="post-preview">
+                                <h6 class="post-title">Post 1</h6>
+                                <p class="post-intro">This is a post intro.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="images/image3.jpg">
+                            
+                            <div class="post-preview">
+                                <h6 class="post-title">Post 1</h6>
+                                <p class="post-intro">This is a post intro.</p>
+                                <a href="#">Read More</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="s1">
+        <section class="s2">
             <div class="main-container">
                 <h3 style="text-align: center;">Get In Touch</h3>
 
@@ -140,5 +185,7 @@
                 </form>
             </div>
         </section>
+
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
