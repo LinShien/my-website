@@ -82,7 +82,7 @@ ul {
     border: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
 
-    height: 500px;
+    height: 550px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
